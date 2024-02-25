@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clour Change Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="ColorEvent">
+        <button id="redBtn">Red</button>
+        <button id="greenBtn">Green</button>
+        <button id="blueBtn">Blue</button>
+        <button id="resetBtn">RESET</button>
+
+    </div>
+    <script>
+
+        document.getElementById("redBtn").addEventListener("click",function(){
+            document.body.style.backgroundColor="red";
+
+        });
+        document.getElementById("greenBtn").addEventListener("click",function(){
+            document.body.style.backgroundColor="green";
+
+        });
+        document.getElementById("blueBtn").addEventListener("click",function(){
+            document.body.style.backgroundColor="blue";
+
+        });
+        document.getElementById("resetBtn").addEventListener("click",function(){
+            document.body.style.backgroundColor="white";
+
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>
